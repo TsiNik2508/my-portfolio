@@ -1,0 +1,121 @@
+.about {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__text {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 50px;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .highlight {
+    text-decoration: none;
+    color: #8E2DE2;
+    font-weight: bold;
+  }
+
+  &__hobbies-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  &__hobbies {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      position: relative;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      padding-left: 20px;
+
+      &::before {
+        content: '•';
+        color: #8E2DE2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 3px solid;
+      border-image: linear-gradient(45deg, #8E2DE2, #4A00E0) 1;
+    }
+
+    &:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+      
+      img {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      margin-right: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__image {
+      width: 100%;
+      margin-top: 20px;
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}

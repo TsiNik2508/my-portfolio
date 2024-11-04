@@ -1,0 +1,35 @@
+.coding-love {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.6s ease-in-out;
+  animation: pulse 1.5s ease-in-out infinite;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .coding-love {
+    font-size: 1.8rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .coding-love {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .coding-love {
+    font-size: 1.2rem; 
+  }
+}

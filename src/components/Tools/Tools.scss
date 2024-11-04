@@ -1,0 +1,61 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  color: #ffffff;
+}
+
+.tools__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.tools__title .highlight {
+  color: #8E2DE2;
+}
+
+.tools__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.tools__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #8E2DE2;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tools__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(142, 45, 226, 0.5);
+}
+
+.tools__icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .tools__grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+  }
+}
+
+@media (max-width: 480px) {
+  .tools__grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 колонка на мобильных */
+  }
+}

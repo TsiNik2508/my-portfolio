@@ -1,0 +1,78 @@
+{
+  "header": {
+    "Nikita": "Nikita",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume"
+  },
+
+  "aboutSection": {
+    "title": "Let’s Get Acquainted!",
+    "greeting": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code!",
+    "skills": "I know how to create websites using HTML, CSS, and JavaScript."
+  },
+
+    "heroSection": {
+      "greeting": "Hello everyone!",
+      "intro": "I'm",
+      "name": "Nikita Tsilosani",
+      "phrase1": "Frontend Developer",
+      "phrase2": "Web Developer",
+      "phrase3": "React Developer",
+      "phrase4": "Creative Coder",
+      "phrase5": "Freelancer"
+    },
+
+    "aboutSection": {
+      "titlePart1": "Let’s",
+      "titlePart2": "Get Acquainted!",
+      "description1": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code! :P",
+      "description2": "I know how to create websites using",
+      "description3": "I'm interested in building beautiful and unique (sometimes very unique)",
+      "description4": "In development, I mostly use",
+      "HTML_CSS_JS": "HTML, CSS, and JavaScript",
+      "webApplications": "web applications",
+      "node": "Node.js",
+      "react": "React",
+      "and": "and"
+    },
+
+    "contactSection": {
+    "title": "You can find me on",
+    "subtitle1": "Feel free to",
+    "subtitle2": "connect",
+    "subtitle3": "with me"
+  },
+  "footer": {
+    "createdBy": "Created by",
+    "name": "Nikita Tsilosani"
+  },
+  "about_me": {
+    "title": "Know Who",
+    "highlight_title": "I'M",
+    "intro": "Hello, I'm Nikita Tsilosani from",
+    "from": "St. Petersburg, Russia",
+    "work": "Currently, I'm working at the company developing landing pages and maintaining the main website at",
+    "education": "I studied frontend development at",
+    "self_study": "and continue to self-study new technologies.",
+    "hobbies": "Besides development, I'm also interested in:",
+    "hobby_drums": "Playing drums",
+    "hobby_travel": "Traveling",
+    "hobby_movies": "Movies and TV shows",
+    "practicum": "Yandex Practicum",
+    "love_coding": "I love coding!"
+  }, 
+  "tech_stack": {
+    "title": "My",
+    "stack": "Stack"
+  },
+  "tools": {
+    "title": "I use",
+    "highlight": "Tools"
+  },
+  "days_i_code": {
+    "title": "Days I",
+    "code": "Code"
+  }
+}

@@ -1,0 +1,54 @@
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3B0087, #1D1D1F);
+  color: #EAEAEA;
+}
+
+.loading-screen__code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  white-space: pre-wrap;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.loading-screen__code div {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.code__keyword {
+  color: #C792EA; 
+  font-weight: bold;
+}
+
+.code__variable {
+  color: #FFCB6B; 
+}
+
+.code__function {
+  color: #82AAFF; 
+}
+
+.code__string {
+  color: #C3E88D; 
+}
+
+.code__comment {
+  color: #7E8299; 
+  font-style: italic;
+}
+
+.code__number {
+  color: #F78C6C; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
