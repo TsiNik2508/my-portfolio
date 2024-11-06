@@ -1,0 +1,180 @@
+.resume-html {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(142, 45, 226, 0.3);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+.resume-html__header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.resume-html__name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.resume-html__location {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: normal;
+}
+
+.resume-html__contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 20px;
+}
+
+.resume-html__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume-html__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.resume-html__link {
+  color: #8e2de2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-html__link:hover {
+  text-decoration: underline;
+}
+
+.resume-html__section {
+  margin-bottom: 30px;
+}
+
+.resume-html__section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #8e2de2;
+  padding-bottom: 5px;
+}
+
+.resume-html__job {
+  margin-bottom: 20px;
+}
+
+.resume-html__company, .resume-html__job-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.resume-html__position {
+  display: block;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.resume-html__date, .resume-html__tech {
+  float: right;
+  font-size: 1rem;
+  color: #8e2de2;
+  font-weight: bold;
+}
+
+.resume-html__text, .resume-html__job ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 10px;
+}
+
+.resume-html__job ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.resume-html__job ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .resume-html {
+    padding: 20px;
+  }
+
+  .resume-html__name {
+    font-size: 2.4rem;
+  }
+
+  .resume-html__section-title {
+    font-size: 1.6rem;
+  }
+
+  .resume-html__contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-html__contact-item {
+    justify-content: center;
+  }
+
+  .resume-html__company, .resume-html__job-title {
+    font-size: 1.2rem;
+  }
+
+  .resume-html__position {
+    font-size: 1rem;
+  }
+
+  .resume-html__date, .resume-html__tech {
+    float: none;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-html__name {
+    font-size: 2rem;
+  }
+
+  .resume-html__location {
+    font-size: 1rem;
+  }
+
+  .resume-html__section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .resume-html__company, .resume-html__job-title {
+    font-size: 1.1rem;
+  }
+
+  .resume-html__text, .resume-html__job ul {
+    font-size: 0.9rem;
+  }
+
+  .resume-html__job ul {
+    padding-left: 15px;
+  }
+}

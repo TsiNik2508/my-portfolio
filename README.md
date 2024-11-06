@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# My Portfolio / Моё Портфолио
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for my personal portfolio website, showcasing my skills, projects, and professional background. The portfolio is designed to be interactive, stylish, and adaptive for various devices, providing a complete view of my work as a front-end developer.
 
-## Available Scripts
+Этот репозиторий содержит код для моего личного сайта-портфолио, который демонстрирует мои навыки, проекты и профессиональный опыт. Портфолио спроектировано как интерактивный, стильный и адаптивный сайт, предоставляющий полный обзор моей работы в качестве фронтенд-разработчика.
 
-In the project directory, you can run:
+## Table of Contents / Оглавление
 
-### `npm start`
+- [Features](#features) / [Особенности](#особенности)
+- [Getting Started](#getting-started) / [Начало работы](#начало-работы)
+- [Installation](#installation) / [Установка](#установка)
+- [Usage](#usage) / [Использование](#использование)
+- [Localization](#localization) / [Локализация](#локализация)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features / Особенности
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Interactive Design**: The website features smooth animations and an engaging layout to provide a visually appealing user experience.
+- **Multi-Language Support**: Uses `react-i18next` for localization, enabling the site to be viewed in different languages.
+- **Modern Technologies**: Built with React, SCSS, and modern web development practices to ensure the best performance and maintainability.
+- **Adaptive Layout**: Responsive design makes the website accessible and beautiful on desktops, tablets, and mobile devices.
 
-### `npm test`
+- **Интерактивный дизайн**: Сайт включает плавные анимации и увлекательную структуру для создания визуально привлекательного пользовательского интерфейса.
+- **Многоязычная поддержка**: Использует `react-i18next` для локализации, позволяя просматривать сайт на разных языках.
+- **Современные технологии**: Разработан с использованием React, SCSS и современных практик веб-разработки для обеспечения наилучшей производительности и поддержки.
+- **Адаптивный макет**: Адаптивный дизайн делает сайт доступным и красивым на настольных компьютерах, планшетах и мобильных устройствах.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started / Начало работы
 
-### `npm run build`
+To run this project locally, make sure you have Node.js and npm installed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Чтобы запустить этот проект локально, убедитесь, что у вас установлены Node.js и npm.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation / Установка
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   1. Клонируйте репозиторий:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```sh
+   git clone https://github.com/TsiNik2508/my-portfolio.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate into the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   2. Перейдите в директорию проекта:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```sh
+   cd my-portfolio
+   ```
 
-## Learn More
+3. Install the dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   3. Установите зависимости:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   npm install
+   ```
 
-### Code Splitting
+### Usage / Использование
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run the application in development mode:
 
-### Analyzing the Bundle Size
+Чтобы запустить приложение в режиме разработки:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+npm start
+```
 
-### Making a Progressive Web App
+This will start the development server at `http://localhost:3000`, where you can view and interact with the portfolio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Это запустит сервер разработки по адресу `http://localhost:3000`, где вы сможете просматривать и взаимодействовать с портфолио.
 
-### Advanced Configuration
+### Localization / Локализация
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The portfolio uses `react-i18next` for managing translations. You can add or modify translations by editing the files in the `public/locales` directory. The translations are loaded based on the user's selected language.
 
-### Deployment
+Портфолио использует `react-i18next` для управления переводами. Вы можете добавить или изменить переводы, редактируя файлы в директории `public/locales`. Переводы загружаются в зависимости от выбранного пользователем языка.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To use different languages:
 
-### `npm run build` fails to minify
+- Modify the language option in `i18n.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Чтобы использовать разные языки:
+
+- Измените опцию языка в `i18n.js`. 
+

@@ -54,18 +54,18 @@ const Header = () => {
           </svg>
           {t('header.about')}
         </Link>
-        <a href="/projects" className="header__link">
+        <Link to="/projects" className="header__link">
           <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="#FFFFFF" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
           </svg>
           {t('header.projects')}
-        </a>
-        <a href="/resume" className="header__link" target="_blank" rel="noopener noreferrer">
+        </Link>
+        <Link to="/resume" className="header__link">
           <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="#FFFFFF" d="M13 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9l-5-5zm3 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 10H13z"/>
           </svg>
           {t('header.resume')}
-        </a>
+        </Link>
       </nav>
       <div className="header__language-switch">
         <span

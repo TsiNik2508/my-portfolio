@@ -6,39 +6,35 @@
     "projects": "Projects",
     "resume": "Resume"
   },
-
   "aboutSection": {
     "title": "Let’s Get Acquainted!",
     "greeting": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code!",
     "skills": "I know how to create websites using HTML, CSS, and JavaScript."
   },
-
-    "heroSection": {
-      "greeting": "Hello everyone!",
-      "intro": "I'm",
-      "name": "Nikita Tsilosani",
-      "phrase1": "Frontend Developer",
-      "phrase2": "Web Developer",
-      "phrase3": "React Developer",
-      "phrase4": "Creative Coder",
-      "phrase5": "Freelancer"
-    },
-
-    "aboutSection": {
-      "titlePart1": "Let’s",
-      "titlePart2": "Get Acquainted!",
-      "description1": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code! :P",
-      "description2": "I know how to create websites using",
-      "description3": "I'm interested in building beautiful and unique (sometimes very unique)",
-      "description4": "In development, I mostly use",
-      "HTML_CSS_JS": "HTML, CSS, and JavaScript",
-      "webApplications": "web applications",
-      "node": "Node.js",
-      "react": "React",
-      "and": "and"
-    },
-
-    "contactSection": {
+  "heroSection": {
+    "greeting": "Hello everyone!",
+    "intro": "I'm",
+    "name": "Nikita Tsilosani",
+    "phrase1": "Frontend Developer",
+    "phrase2": "Web Developer",
+    "phrase3": "React Developer",
+    "phrase4": "Creative Coder",
+    "phrase5": "Freelancer"
+  },
+  "aboutSection": {
+    "titlePart1": "Let’s",
+    "titlePart2": "Get Acquainted!",
+    "description1": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code! :P",
+    "description2": "I know how to create websites using",
+    "description3": "I'm interested in building beautiful and unique (sometimes very 'unique')",
+    "description4": "In development, I mostly use",
+    "HTML_CSS_JS": "HTML, CSS, and JavaScript",
+    "webApplications": "web applications",
+    "node": "Node.js",
+    "react": "React",
+    "and": "and"
+  },
+  "contactSection": {
     "title": "You can find me on",
     "subtitle1": "Feel free to",
     "subtitle2": "connect",
@@ -62,7 +58,7 @@
     "hobby_movies": "Movies and TV shows",
     "practicum": "Yandex Practicum",
     "love_coding": "I love coding!"
-  }, 
+  },
   "tech_stack": {
     "title": "My",
     "stack": "Stack"
@@ -71,8 +67,104 @@
     "title": "I use",
     "highlight": "Tools"
   },
-  "days_i_code": {
-    "title": "Days I",
-    "code": "Code"
+  "my_github": {
+    "title": "My",
+    "github": "Github",
+    "visit_profile": "Visit my Github profile"
+  },
+  "projects": {
+    "title": "My ",
+    "highlight": "Works",
+    "subtitle": "Here is a selection of my projects",
+    "russian_travel": {
+      "title": "Russian Travel",
+      "description": "Project created as part of the Yandex.Practicum Web Developer program. This is a responsive website developed using the Nested BEM file structure methodology."
+    },
+    "mesto_russia": {
+      "title": "Mesto Russia",
+      "description": "An interactive web application that allows users to share their photos. Users can add new photo cards, like, delete cards, edit their profile, and includes login and registration forms."
+    },
+    "diploma_project": {
+      "title": "Diploma Project",
+      "description": "A diploma project completed as part of the Yandex.Practicum Web Developer course."
+    },
+    "old_portfolio": {
+      "title": "My Portfolio (old)",
+      "description": "This project is a web portfolio created to showcase my skills and projects."
+    },
+    "palc_project": {
+      "title": "Project for Palc Band",
+      "description": "A frontend project for the Palc band website, developed using React and React Router. It includes multiple pages with information about the band, tours, merchandise, and gallery."
+    },
+    "calculator": {
+      "title": "Calculator",
+      "description": "A simple (or not so simple) web calculator. The project is written in HTML, CSS, and JavaScript."
+    }
+  },
+  "resume": {
+    "title": "My <span class=\"highlight\">Resume</span>",
+    "name": "Nikita Tsilosani",
+    "location": "Saint Petersburg, Russia",
+    "contacts": {
+      "phone": "+7 991 919 1817",
+      "email": "nikitaandr2508@gmail.com",
+      "github": "TsiNik2508",
+      "linkedin": "Nikita Tsilosani",
+      "telegram": "Tsi_Nick"
+    },
+    "sections": {
+      "experience": "Experience",
+      "freelance": "Freelance",
+      "projects": "Projects",
+      "skills": "Skills",
+      "education": "Education"
+    },
+    "jobs": {
+      "diar": {
+        "company": "DiAR",
+        "position": "Frontend Developer",
+        "date": "July 2024 — Present",
+        "description": "Support and development of functionality for websites",
+        "tasks": [
+          "Development of landing pages on 1C-Bitrix, optimization for speed and UX",
+          "Code unification with BEM and creation of reusable components",
+          "Website optimization: setting up redirects, minification, lazy-loading",
+          "Development of UI components and migration to React for performance improvements"
+        ]
+      },
+      "freelance": {
+        "position": "Frontend Developer",
+        "date": "February 2024 — Present",
+        "jobs": [
+          {
+            "title": "Landing page for a wedding agency",
+            "description": "Created an adaptive site with animation and well-structured content layout."
+          },
+          {
+            "title": "Music band website",
+            "description": "Created a unique website styled for the band, optimized for SEO."
+          }
+        ]
+      }
+    },
+    "projects": {
+      "palc": {
+        "title": "Palc Frontend",
+        "tech": "React",
+        "description": "The project includes pages with information about the band, tours, merchandise, and gallery."
+      },
+      "moviesExplorer": {
+        "title": "Movies-explorer",
+        "tech": "React, Node.js",
+        "description": "Consolidation of backend and frontend skills with MongoDB and Express."
+      }
+    },
+    "skills": "JavaScript, React, Node.js, MongoDB, Express, HTML, CSS, BEM, Git",
+    "education": {
+      "yandex": {
+        "institution": "Yandex.Practicum",
+        "specialty": "Specialty: Web Developer"
+      }
+    }
   }
 }
