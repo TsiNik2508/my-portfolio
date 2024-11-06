@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.072789ba.css",
-    "main.js": "/my-portfolio/static/js/main.999c76d7.js",
+    "main.js": "/my-portfolio/static/js/main.3eaffab4.js",
     "static/media/mesto-react.webp": "/my-portfolio/static/media/mesto-react.c4c8954efdac3dcea3d8.webp",
     "static/media/across-russia.webp": "/my-portfolio/static/media/across-russia.93b9226e12b7428a9414.webp",
     "static/media/movieExplorer.webp": "/my-portfolio/static/media/movieExplorer.dc652db92ac7ce443090.webp",
@@ -23,10 +23,10 @@
     "static/media/git.svg": "/my-portfolio/static/media/git.aea0c8c714d77fd469f9f7331deacd60.svg",
     "static/media/webpack.svg": "/my-portfolio/static/media/webpack.f0e8a5c2f37b6519e8b40671ce332e8d.svg",
     "main.072789ba.css.map": "/my-portfolio/static/css/main.072789ba.css.map",
-    "main.999c76d7.js.map": "/my-portfolio/static/js/main.999c76d7.js.map"
+    "main.3eaffab4.js.map": "/my-portfolio/static/js/main.3eaffab4.js.map"
   },
   "entrypoints": [
     "static/css/main.072789ba.css",
-    "static/js/main.999c76d7.js"
+    "static/js/main.3eaffab4.js"
   ]
 }
