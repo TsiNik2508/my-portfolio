@@ -105,6 +105,8 @@
     "title": "My <span class=\"highlight\">Resume</span>",
     "name": "Nikita Tsilosani",
     "location": "Saint Petersburg, Russia",
+    "loading": "Loading...",
+    "download": "Download Resume",
     "contacts": {
       "phone": "+7 991 919 1817",
       "email": "nikitaandr2508@gmail.com",
@@ -142,7 +144,7 @@
           },
           {
             "title": "Music band website",
-            "description": "Created a unique website styled for the band, optimized for SEO."
+            "description": "Created a unique website styled for the band."
           }
         ]
       }
@@ -159,7 +161,7 @@
         "description": "Consolidation of backend and frontend skills with MongoDB and Express."
       }
     },
-    "skills": "JavaScript, React, Node.js, MongoDB, Express, HTML, CSS, BEM, Git",
+    "skills": "JavaScript, React.js, Node.js, Express.js, Typescript, Next.js, MongoDB, Express, Webpack,  HTML, CSS, BEM, Git",
     "education": {
       "yandex": {
         "institution": "Yandex.Practicum",

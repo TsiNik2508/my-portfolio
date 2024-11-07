@@ -105,6 +105,8 @@
     "title": "Мое <span class=\"highlight\">Резюме</span>",
     "name": "Цилосани Никита",
     "location": "Санкт-Петербург, Россия",
+    "loading": "Загрузка...",
+    "download": "Скачать резюме",
     "contacts": {
       "phone": "+7 991 919 1817",
       "email": "nikitaandr2508@gmail.com",
@@ -159,7 +161,7 @@
         "description": "Закрепление навыков backend и frontend разработки с MongoDB и Express."
       }
     },
-    "skills": "JavaScript, React, Node.js, MongoDB, Express, HTML, CSS, БЭМ, Git",
+    "skills": "JavaScript, React.js, Node.js, Express.js, Typescript, Next.js, MongoDB, Express, Webpack,  HTML, CSS, BEM, Git",
     "education": {
       "yandex": {
         "institution": "Яндекс.Практикум",

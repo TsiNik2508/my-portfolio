@@ -113,7 +113,12 @@
   margin-bottom: 5px;
 }
 
-/* Responsive styles */
+.resume-html__job a {
+  text-decoration: none;
+  color: #8e2de2;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .resume-html {
     padding: 20px;
