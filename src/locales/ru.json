@@ -68,8 +68,8 @@
     "highlight": "Инструменты"
   },
   "my_github": {
-    "title": "Мой",
-    "github": "Github",
+    "title": "Моя",
+    "github": "Активность",
     "visit_profile": "Посетить мой профиль на Github"
   },
   "projects": {
