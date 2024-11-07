@@ -23,7 +23,7 @@
   width: 3px;
   height: 3px;
   background-color: #4A00E0;
-  animation-duration: 6s;
+  animation-duration: 10s; 
   animation-delay: calc(-1s * var(--star-index)); 
 }
 
@@ -31,7 +31,7 @@
   width: 2px;
   height: 2px;
   background-color: #8E2DE2;
-  animation-duration: 8s;
+  animation-duration: 12s; 
   animation-delay: calc(-1.5s * var(--star-index));
 }
 
@@ -39,20 +39,20 @@
   width: 2px;
   height: 2px;
   background-color: #C3E88D; 
-  animation-duration: 7s;
+  animation-duration: 11s; 
   animation-delay: calc(-2s * var(--star-index));
 }
 
 @keyframes moveStar {
   0% {
-    transform: translateY(100vh) translateX(-30vw);
+    transform: translateY(100vh) translateX(calc(-30vw * var(--star-direction)));
     opacity: 0;
   }
   30% {
     opacity: 0.8;
   }
   100% {
-    transform: translateY(-100vh) translateX(30vw);
+    transform: translateY(-100vh) translateX(calc(30vw * var(--star-direction)));
     opacity: 0;
   }
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import './AboutSection.scss';
 
 const AboutSection = () => {
@@ -38,6 +40,12 @@ const AboutSection = () => {
     document.addEventListener('mouseup', handleMouseUp);
   };
 
+  // Настройки для анимации появления при скролле
+  const { ref: descriptionRef1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: descriptionRef2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: descriptionRef3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: descriptionRef4, inView: inView4 } = useInView({ triggerOnce: true });
+
   return (
     <div className="about-section">
       <h2 className="about-section__title">
@@ -45,18 +53,42 @@ const AboutSection = () => {
       </h2>
       <div className="about-section__content">
         <div className="about-section__text">
-          <p className="about-section__description">
+          <motion.p
+            ref={descriptionRef1}
+            className="about-section__description"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={inView1 ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+          >
             {t('aboutSection.description1')}
-          </p>
-          <p className="about-section__description">
+          </motion.p>
+          <motion.p
+            ref={descriptionRef2}
+            className="about-section__description"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={inView2 ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
+          >
             {t('aboutSection.description2')} <span className="highlight italic">{t('aboutSection.HTML_CSS_JS')}</span>.
-          </p>
-          <p className="about-section__description">
+          </motion.p>
+          <motion.p
+            ref={descriptionRef3}
+            className="about-section__description"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={inView3 ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeInOut" }}
+          >
             {t('aboutSection.description3')} <span className="highlight">{t('aboutSection.webApplications')}</span>.
-          </p>
-          <p className="about-section__description">
+          </motion.p>
+          <motion.p
+            ref={descriptionRef4}
+            className="about-section__description"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={inView4 ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.9, ease: "easeInOut" }}
+          >
             {t('aboutSection.description4')} <span className="highlight">{t('aboutSection.node')}</span> {t('aboutSection.and')} <span className="highlight">{t('aboutSection.react')}</span>.
-          </p>
+          </motion.p>
         </div>
         <div className="about-section__cloud">
           {Object.keys(positions).map((tech) => (

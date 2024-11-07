@@ -1,6 +1,5 @@
-// src/components/Header/Header.js
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Header.scss';
 
@@ -10,16 +9,21 @@ const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState('EN');
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolling(scrollTop > 50); 
+      setIsScrolling(scrollTop > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -37,9 +41,9 @@ const Header = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <a href="/" className="header__logo">
+      <Link to="/" className="header__logo">
         {t('header.Nikita')}
-      </a>
+      </Link>
       <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
         <Link to="/" className="header__link">
           <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

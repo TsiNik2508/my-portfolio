@@ -18,15 +18,15 @@ import "./App.scss";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(
-    !localStorage.getItem("hasLoaded")
+    !sessionStorage.getItem("hasLoaded")
   );
 
   useEffect(() => {
     if (isLoading) {
       const timer = setTimeout(() => {
         setIsLoading(false);
-        localStorage.setItem("hasLoaded", "true");
-      }, 3000);
+        sessionStorage.setItem("hasLoaded", "true");
+      }, 5000);
 
       return () => clearTimeout(timer);
     }
