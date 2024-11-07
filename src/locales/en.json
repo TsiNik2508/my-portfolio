@@ -105,8 +105,7 @@
     "title": "My <span class=\"highlight\">Resume</span>",
     "name": "Nikita Tsilosani",
     "location": "Saint Petersburg, Russia",
-    "loading": "Loading...",
-    "download": "Download Resume",
+    "and": "and",
     "contacts": {
       "phone": "+7 991 919 1817",
       "email": "nikitaandr2508@gmail.com",

@@ -105,8 +105,7 @@
     "title": "Мое <span class=\"highlight\">Резюме</span>",
     "name": "Цилосани Никита",
     "location": "Санкт-Петербург, Россия",
-    "loading": "Загрузка...",
-    "download": "Скачать резюме",
+    "and": "и",
     "contacts": {
       "phone": "+7 991 919 1817",
       "email": "nikitaandr2508@gmail.com",
