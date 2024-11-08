@@ -96,9 +96,9 @@
       "title": "Project for Palc Band",
       "description": "A frontend project for the Palc band website, developed using React and React Router. It includes multiple pages with information about the band, tours, merchandise, and gallery."
     },
-    "calculator": {
-      "title": "Calculator",
-      "description": "A simple (or not so simple) web calculator. The project is written in HTML, CSS, and JavaScript."
+    "todo": {
+      "title": "ToDo",
+      "description": "This is a simple ToDo application that allows users to manage their task list. The app is built using TypeScript, React, and React Hooks."
     }
   },
   "resume": {

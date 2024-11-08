@@ -7,6 +7,7 @@ import mestoReactImg from '../../images/mesto-react.webp';
 import movieExplorerImg from '../../images/movieExplorer.webp';
 import portfolioImg from '../../images/portfolio.webp';
 import palcImg from '../../images/palc.webp';
+import todoImg from '../../images/todo.webp';
 
 const projectsData = [
   {
@@ -38,11 +39,11 @@ const projectsData = [
     imageUrl: mestoReactImg,
   },
   {
-    title: 'projects.russian_travel.title',
-    description: 'projects.russian_travel.description',
-    github: 'https://github.com/TsiNik2508/russian-travel',
-    demo: 'https://tsinik2508.github.io/russian-travel/',
-    imageUrl: russianTravelImg,
+    title: 'projects.todo.title',
+    description: 'projects.todo.description',
+    github: 'https://github.com/TsiNik2508/todo',
+    demo: 'https://tsinik2508.github.io/todo/',
+    imageUrl: todoImg,
   },
 ];
 
