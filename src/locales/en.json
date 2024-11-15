@@ -99,6 +99,10 @@
     "todo": {
       "title": "ToDo",
       "description": "This is a simple ToDo application that allows users to manage their task list. The app is built using TypeScript, React, and React Hooks."
+    },
+    "chat": {
+      "title": "ChatApp",
+      "description": "ChatApp is a real-time messaging web application where users can log in via Google, edit their profile, send, and edit messages."
     }
   },
   "resume": {

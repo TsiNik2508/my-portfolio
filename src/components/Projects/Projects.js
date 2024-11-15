@@ -8,6 +8,7 @@ import movieExplorerImg from '../../images/movieExplorer.webp';
 import portfolioImg from '../../images/portfolio.webp';
 import palcImg from '../../images/palc.webp';
 import todoImg from '../../images/todo.webp';
+import chatImg from '../../images/chat.webp';
 
 const projectsData = [
   {
@@ -16,6 +17,13 @@ const projectsData = [
     github: 'https://github.com/TsiNik2508/Palc',
     demo: 'https://tsinik2508.github.io/Palc/',
     imageUrl: palcImg,
+  },
+  {
+    title: 'projects.chat.title',
+    description: 'projects.chat.description',
+    github: 'https://github.com/TsiNik2508/chat-app',
+    demo: 'https://tsinik2508.github.io/chat-app/',
+    imageUrl: chatImg,
   },
   {
     title: 'projects.old_portfolio.title',
