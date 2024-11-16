@@ -110,6 +110,7 @@
     "name": "Цилосани Никита",
     "location": "Санкт-Петербург, Россия",
     "and": "и",
+    "download": "Скачать резюме",
     "contacts": {
       "phone": "+7 991 919 1817",
       "email": "nikitaandr2508@gmail.com",
@@ -162,6 +163,16 @@
         "title": "Movies-explorer",
         "tech": "React, Node.js",
         "description": "Закрепление навыков backend и frontend разработки с MongoDB и Express."
+      },
+      "todo": {
+        "title": "ToDo",
+        "tech": "TypeScript, React, React Hooks",
+        "description": "Простое ToDo-приложение, которое позволяет пользователю управлять списком задач."
+      },
+      "chatApp": {
+        "title": "ChatApp",
+        "tech": "React, Firebase, SCSS, ESLint",
+        "description": "Современное веб-приложение для обмена сообщениями в реальном времени, с авторизацией через Google, редактированием профиля и управлением сообщениями."
       }
     },
     "skills": "JavaScript, React.js, Node.js, Express.js, Typescript, Next.js, MongoDB, Express, Webpack,  HTML, CSS, BEM, Git",

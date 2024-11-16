@@ -110,6 +110,7 @@
     "name": "Nikita Tsilosani",
     "location": "Saint Petersburg, Russia",
     "and": "and",
+    "download": "Download Resume",
     "contacts": {
       "phone": "+7 991 919 1817",
       "email": "nikitaandr2508@gmail.com",
@@ -162,6 +163,16 @@
         "title": "Movies-explorer",
         "tech": "React, Node.js",
         "description": "Consolidation of backend and frontend skills with MongoDB and Express."
+      },
+      "todo": {
+        "title": "ToDo",
+        "tech": "TypeScript, React, React Hooks",
+        "description": "A simple ToDo application that allows users to manage their task list."
+      },
+      "chatApp": {
+        "title": "ChatApp",
+        "tech": "React, Firebase, SCSS, ESLint",
+        "description": "A modern web-based messaging app with real-time communication, Google login, profile editing, and message management."
       }
     },
     "skills": "JavaScript, React.js, Node.js, Express.js, Typescript, Next.js, MongoDB, Express, Webpack,  HTML, CSS, BEM, Git",

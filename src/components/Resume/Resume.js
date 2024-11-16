@@ -5,7 +5,16 @@ import ResumeHTML from '../ResumeHTML/ResumeHTML';
 import './Resume.scss';
 
 const Resume = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const currentLang = i18n.language;
+
+  const getResumePath = () => {
+    return currentLang === 'ru'
+      ? '/resume/nikita-resume-ru.pdf'
+      : '/resume/nikita-resume-en.pdf';
+  };
+  
 
   return (
     <div className="resume">
@@ -29,9 +38,25 @@ const Resume = () => {
           delay: 0.3, 
         }}
       >
-        <div className="resume__download-button"></div>
+        <div className="resume__download-button">
+          <a
+            href={getResumePath()}
+            download
+          >
+            <button>{t('resume.download')}</button>
+          </a>
+        </div>
+
         <ResumeHTML />
-        <div className="resume__download-button"></div>
+
+        <div className="resume__download-button">
+          <a
+            href={getResumePath()}
+            download
+          >
+            <button>{t('resume.download')}</button>
+          </a>
+        </div>
       </motion.div>
     </div>
   );
