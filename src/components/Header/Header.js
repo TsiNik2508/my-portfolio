@@ -1,73 +1,105 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, memo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Header.scss';
+
+// Выносим SVG иконки в отдельные компоненты
+const HomeIcon = memo(() => (
+  <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="#FFFFFF" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+));
+
+const AboutIcon = memo(() => (
+  <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <circle fill="#FFFFFF" cx="12" cy="8" r="4"/>
+    <path fill="#FFFFFF" d="M12 12c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+  </svg>
+));
+
+const ProjectsIcon = memo(() => (
+  <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="#FFFFFF" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+  </svg>
+));
+
+const ResumeIcon = memo(() => (
+  <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="#FFFFFF" d="M13 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9l-5-5zm3 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 10H13z"/>
+  </svg>
+));
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isScrolling, setIsScrolling] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState('EN');
+  const [language, setLanguage] = useState(() => localStorage.getItem('preferredLanguage') || 'EN');
   const location = useLocation();
 
+  // Оптимизированный обработчик скролла с использованием useCallback
+  const handleScroll = useCallback(() => {
+    const scrollTop = window.scrollY;
+    setIsScrolling(scrollTop > 50);
+  }, []);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolling(scrollTop > 50);
+    let ticking = false;
+    const scrollHandler = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('scroll', scrollHandler, { passive: true });
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [handleScroll]);
 
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen(prev => !prev);
+  }, []);
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = useCallback((lang) => {
     setLanguage(lang);
     i18n.changeLanguage(lang.toLowerCase());
     localStorage.setItem('preferredLanguage', lang);
-  };
+  }, [i18n]);
+
+  const handleMouseEnter = useCallback(() => setIsHovered(true), []);
+  const handleMouseLeave = useCallback(() => setIsHovered(false), []);
 
   return (
     <header
       className={`header ${isScrolling ? 'header--scrolled' : ''} ${isHovered ? 'header--hovered' : ''}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <Link to="/" className="header__logo">
         {t('header.Nikita')}
       </Link>
       <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
         <Link to="/" className="header__link">
-          <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="#FFFFFF" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-          </svg>
+          <HomeIcon />
           {t('header.home')}
         </Link>
         <Link to="/about" className="header__link">
-          <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <circle fill="#FFFFFF" cx="12" cy="8" r="4"/>
-            <path fill="#FFFFFF" d="M12 12c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-          </svg>
+          <AboutIcon />
           {t('header.about')}
         </Link>
         <Link to="/projects" className="header__link">
-          <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="#FFFFFF" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
-          </svg>
+          <ProjectsIcon />
           {t('header.projects')}
         </Link>
         <Link to="/resume" className="header__link">
-          <svg className="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="#FFFFFF" d="M13 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9l-5-5zm3 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 10H13z"/>
-          </svg>
+          <ResumeIcon />
           {t('header.resume')}
         </Link>
       </nav>
@@ -94,4 +126,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

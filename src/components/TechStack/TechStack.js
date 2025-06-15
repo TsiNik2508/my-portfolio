@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import './TechStack.scss';
 import JSIcon from '../../assets/js.svg';
@@ -12,10 +12,23 @@ import WebpackIcon from '../../assets/webpack.svg';
 import ReduxIcon from '../../assets/redux.svg';
 import GithubIcon from '../../assets/github.svg';
 
+const TechIcon = memo(({ icon, name }) => (
+  <div className="tech-stack__item">
+    <img 
+      src={icon} 
+      alt={name} 
+      className="tech-stack__icon" 
+      loading="lazy"
+      width="64"
+      height="64"
+    />
+  </div>
+));
+
 const TechStack = () => {
   const { t } = useTranslation();
 
-  const techIcons = [
+  const techIcons = useMemo(() => [
     { icon: JSIcon, name: 'JavaScript' },
     { icon: ReactIcon, name: 'React' },
     { icon: NodeIcon, name: 'Node.js' },
@@ -26,7 +39,7 @@ const TechStack = () => {
     { icon: WebpackIcon, name: 'Webpack' },
     { icon: ReduxIcon, name: 'Redux' },
     { icon: GithubIcon, name: 'GitHub' },
-  ];
+  ], []);
 
   return (
     <div className="tech-stack">
@@ -35,13 +48,11 @@ const TechStack = () => {
       </h2>
       <div className="tech-stack__grid">
         {techIcons.map((tech, index) => (
-          <div key={index} className="tech-stack__item">
-            <img src={tech.icon} alt={tech.name} className="tech-stack__icon" />
-          </div>
+          <TechIcon key={index} icon={tech.icon} name={tech.name} />
         ))}
       </div>
     </div>
   );
 };
 
-export default TechStack;
+export default memo(TechStack);

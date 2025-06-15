@@ -7,7 +7,7 @@
     "resume": "Resume"
   },
   "aboutSection": {
-    "title": "Let’s Get Acquainted!",
+    "title": "Let's Get Acquainted!",
     "greeting": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code!",
     "skills": "I know how to create websites using HTML, CSS, and JavaScript."
   },
@@ -22,7 +22,7 @@
     "phrase5": "Freelancer"
   },
   "aboutSection": {
-    "titlePart1": "Let’s",
+    "titlePart1": "Let's",
     "titlePart2": "Get Acquainted!",
     "description1": "Hi, I'm Nikita, and I don't really enjoy writing about myself, but I do enjoy writing code! :P",
     "description2": "I know how to create websites using",
@@ -103,7 +103,9 @@
     "chat": {
       "title": "ChatApp",
       "description": "ChatApp is a real-time messaging web application where users can log in via Google, edit their profile, send, and edit messages."
-    }
+    },
+    "github_title": "New projects from GitHub",
+    "no_description": "No description"
   },
   "resume": {
     "title": "My <span class=\"highlight\">Resume</span>",

@@ -25,18 +25,23 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 50px;
 }
 
 .about-section__text {
   flex: 1;
   max-width: 600px;
-  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about-section__description {
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 10px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 .highlight {
@@ -47,7 +52,6 @@
 .italic {
   font-style: italic;
 }
-
 
 .about-section__cloud {
   flex: 1;
@@ -91,6 +95,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 30px;
   }
 
   .about-section__text {

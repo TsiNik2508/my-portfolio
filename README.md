@@ -1,6 +1,230 @@
-# My Portfolio / Моё Портфолио
+# My Portfolio Website
 
-## [Demo](https://TsiNik2508.github.io/my-portfolio) / [Демо](https://TsiNik2508.github.io/my-portfolio)
+A modern portfolio website built with React and various modern technologies. The site showcases my skills, projects, and professional experience as a frontend developer.
+
+## 🚀 Features
+
+- 🌐 Multi-language support (English/Russian)
+- 📱 Fully responsive design
+- ⚡ Optimized performance
+- 🎨 Modern UI/UX design
+- 🔄 Automatic GitHub projects loading
+- 📊 Animated charts and diagrams
+- 🎯 Interactive elements
+- 🎭 Smooth animations and transitions
+- 📱 Adaptive layout for all devices
+
+## 🛠 Technologies
+
+- React 18
+- i18next for internationalization
+- Framer Motion for animations
+- React Icons
+- Chart.js for graphs
+- GitHub API for projects
+- CSS Modules for styling
+- React Router for navigation
+- SCSS for styles
+- Node.js and npm for development
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/TsiNik2508/my-portfolio.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd my-portfolio
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the project:
+```bash
+npm start
+```
+
+## 🌐 Available Scripts
+
+- `npm start` - Run in development mode (http://localhost:3000)
+- `npm run build` - Build for production
+- `npm run preview` - Preview the built project
+
+## 📁 Project Structure
+
+```
+src/
+├── components/         # React components
+├── hooks/             # Custom hooks
+├── styles/            # Global styles
+├── utils/             # Utility functions
+├── locales/           # Localization files
+└── assets/            # Static assets
+```
+
+## 🔧 Configuration
+
+### GitHub API
+To work with GitHub API, create a `.env` file in the project root and add:
+```
+VITE_GITHUB_TOKEN=your_github_token
+```
+
+### Localization
+Localization files are located in the `src/locales/` directory:
+- `en/translation.json` - English
+- `ru/translation.json` - Russian
+
+To change the language, edit the settings in `i18n.js`.
+
+## 📱 Responsiveness
+
+The site is fully responsive and optimized for the following resolutions:
+- Mobile devices (320px - 480px)
+- Tablets (481px - 768px)
+- Laptops (769px - 1024px)
+- Desktops (1025px+)
+
+## 🚀 Optimization
+
+The project is optimized for maximum performance:
+- Lazy loading of components
+- Optimized images
+- Data caching
+- Minimized re-renders
+- Optimized animations
+- Efficient state management
+- Optimized assets
+
+## 📄 License
+
+MIT
+
+## 👨‍💻 Author
+
+Nikita Tsilosani
+
+## [Demo](https://TsiNik2508.github.io/my-portfolio)
+
+---
+
+# Мой Портфолио Сайт
+
+Современный портфолио-сайт, разработанный с использованием React и различных современных технологий. Сайт демонстрирует мои навыки, проекты и профессиональный опыт в качестве фронтенд-разработчика.
+
+## 🚀 Особенности
+
+- 🌐 Многоязычность (Русский/Английский)
+- 📱 Полностью адаптивный дизайн
+- ⚡ Оптимизированная производительность
+- 🎨 Современный UI/UX дизайн
+- 🔄 Автоматическая загрузка проектов с GitHub
+- 📊 Анимированные графики и диаграммы
+- 🎯 Интерактивные элементы
+- 🎭 Плавные анимации и переходы
+- 📱 Адаптивный макет для всех устройств
+
+## 🛠 Технологии
+
+- React 18
+- i18next для интернационализации
+- Framer Motion для анимаций
+- React Icons
+- Chart.js для графиков
+- GitHub API для проектов
+- CSS Modules для стилизации
+- React Router для навигации
+- SCSS для стилей
+- Node.js и npm для разработки
+
+## 📦 Установка
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/TsiNik2508/my-portfolio.git
+```
+
+2. Перейдите в директорию проекта:
+```bash
+cd my-portfolio
+```
+
+3. Установите зависимости:
+```bash
+npm install
+```
+
+4. Запустите проект:
+```bash
+npm start
+```
+
+## 🌐 Доступные скрипты
+
+- `npm start` - Запуск в режиме разработки (http://localhost:3000)
+- `npm run build` - Сборка для продакшена
+- `npm run preview` - Предпросмотр собранного проекта
+
+## 📁 Структура проекта
+
+```
+src/
+├── components/         # React компоненты
+├── hooks/             # Пользовательские хуки
+├── styles/            # Глобальные стили
+├── utils/             # Вспомогательные функции
+├── locales/           # Файлы локализации
+└── assets/            # Статические ресурсы
+```
+
+## 🔧 Конфигурация
+
+### GitHub API
+Для работы с GitHub API необходимо создать файл `.env` в корне проекта и добавить:
+```
+VITE_GITHUB_TOKEN=your_github_token
+```
+
+### Локализация
+Файлы локализации находятся в директории `src/locales/`:
+- `ru/translation.json` - Русский язык
+- `en/translation.json` - Английский язык
+
+Для изменения языка отредактируйте настройки в `i18n.js`.
+
+## 📱 Адаптивность
+
+Сайт полностью адаптивен и оптимизирован для следующих разрешений:
+- Мобильные устройства (320px - 480px)
+- Планшеты (481px - 768px)
+- Ноутбуки (769px - 1024px)
+- Десктопы (1025px+)
+
+## 🚀 Оптимизация
+
+Проект оптимизирован для максимальной производительности:
+- Ленивая загрузка компонентов
+- Оптимизированные изображения
+- Кэширование данных
+- Минимизация перерендеров
+- Оптимизированные анимации
+- Эффективное управление состоянием
+- Оптимизированные ассеты
+
+## 📄 Лицензия
+
+MIT
+
+## 👨‍💻 Автор
+
+Никита Цилосани
+
+## [Демо](https://TsiNik2508.github.io/my-portfolio)
 
 This repository contains the code for my personal portfolio website, showcasing my skills, projects, and professional background. The portfolio is designed to be interactive, stylish, and adaptive for various devices, providing a complete view of my work as a front-end developer.
 
@@ -84,5 +308,5 @@ To use different languages:
 
 Чтобы использовать разные языки:
 
-- Измените опцию языка в `i18n.js`. 
+- Измените опцию языка в `i18n.js`.
 

@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import CodingLove from '../CodingLove/CodingLove'; 
 import './About.scss';
+
+const hobbies = [
+  'about_me.hobby_drums',
+  'about_me.hobby_travel',
+  'about_me.hobby_movies',
+];
+
+const links = [
+  {
+    href: 'https://practicum.yandex.ru/',
+    label: 'about_me.practicum',
+  },
+];
 
 const About = () => {
   const { t } = useTranslation();
@@ -21,21 +34,32 @@ const About = () => {
           </p>
           <p className="about__description">
             {t('about_me.education')}
-            <a href="https://practicum.yandex.ru/" target="_blank" rel="noopener noreferrer" className="highlight"> {t('about_me.practicum') } </a>, <br />{t('about_me.self_study')}
+            {links.map(link => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="highlight"
+                aria-label={t(link.label)}
+              >
+                {' '}{t(link.label)}
+              </a>
+            ))}, <br />{t('about_me.self_study')}
           </p>
           <p className="about__hobbies-title">{t('about_me.hobbies')}</p>
           <ul className="about__hobbies">
-            <li>{t('about_me.hobby_drums')}</li>
-            <li>{t('about_me.hobby_travel')}</li>
-            <li>{t('about_me.hobby_movies')}</li>
+            {hobbies.map(hobby => (
+              <li key={hobby}>{t(hobby)}</li>
+            ))}
           </ul>
         </div>
         <div className="about__image">
-        <CodingLove /> 
+          <CodingLove /> 
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default memo(About);
